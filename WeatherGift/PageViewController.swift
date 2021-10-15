@@ -17,13 +17,13 @@ class PageViewController: UIPageViewController {
         self.delegate = self
         self.dataSource = self
         
+        loadLocations()
         setViewControllers([createLocationDetailViewController(forPage: 0)], direction: .forward, animated: false, completion: nil)
     }
     
     func loadLocations(){
         guard let locationsEncoded = UserDefaults.standard.value(forKey: "weatherLocations") as? Data else{
             print("⚠️ Error: Could not load weatherlocations data from UserDefaults.")
-            // TODO: Get user location for the first element in weatherLocations
             weatherLocations.append(WeatherLocation(name: "Current Location", latitude: 20.20, longitude: 20.20))
             return
         }

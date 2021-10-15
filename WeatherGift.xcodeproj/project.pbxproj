@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631D85AB2716759C00752E61 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631D85AA2716759C00752E61 /* WeatherDetail.swift */; };
 		631DA47A2715CACE002ADA54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA4792715CACE002ADA54 /* AppDelegate.swift */; };
 		631DA47C2715CACE002ADA54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA47B2715CACE002ADA54 /* SceneDelegate.swift */; };
 		631DA47E2715CACE002ADA54 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA47D2715CACE002ADA54 /* LocationListViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631D85AA2716759C00752E61 /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		631DA4762715CACE002ADA54 /* WeatherGift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherGift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		631DA4792715CACE002ADA54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		631DA47B2715CACE002ADA54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				631DA4792715CACE002ADA54 /* AppDelegate.swift */,
 				631DA47B2715CACE002ADA54 /* SceneDelegate.swift */,
 				631DA48D2715CBD0002ADA54 /* WeatherLocation.swift */,
+				631D85AA2716759C00752E61 /* WeatherDetail.swift */,
 				634348EC27160968002258B1 /* PageViewController.swift */,
 				631DA4912715E60F002ADA54 /* LocationDetailViewController.swift */,
 				631DA47D2715CACE002ADA54 /* LocationListViewController.swift */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				631DA47E2715CACE002ADA54 /* LocationListViewController.swift in Sources */,
+				631D85AB2716759C00752E61 /* WeatherDetail.swift in Sources */,
 				634348ED27160968002258B1 /* PageViewController.swift in Sources */,
 				631DA48E2715CBD0002ADA54 /* WeatherLocation.swift in Sources */,
 				631DA4902715DF2C002ADA54 /* APIkeys.swift in Sources */,
