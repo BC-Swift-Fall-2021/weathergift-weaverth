@@ -122,7 +122,6 @@ class WeatherDetail: WeatherLocation{
                     let dailyLow = Int(result.daily[index].temp.min.rounded())
                     let dailyWeather = DailyWeather(dailyIcon: dailyIcon, dailyWeekday: dailyWeekDay, dailySummary: dailySummary, dailyHigh: dailyHigh, dailyLow: dailyLow)
                     self.dailyWeatherData.append(dailyWeather)
-                    print("Day: \(dailyWeekDay), High: \(dailyHigh), Low: \(dailyLow)")
                 }
                 // get no more than 24 hours of hourly data
                 let lastHour = min(24, result.hourly.count)
@@ -131,12 +130,10 @@ class WeatherDetail: WeatherLocation{
                         let hourlyDate = Date(timeIntervalSince1970: result.hourly[index].dt)
                         hourFormatter.timeZone = TimeZone(identifier: result.timezone)
                         let hour = hourFormatter.string(from: hourlyDate)
-//                        let hourlyIcon = self.fileNameForIcon(icon: result.hourly[index].weather[0].icon)
                         let hourlyIcon = self.systemNameFromID(id: result.hourly[index].weather[0].id, icon: result.hourly[index].weather[0].icon)
                         let hourlyTemperature = Int(result.hourly[index].temp.rounded())
                         let hourlyWeather = HourlyWeather(hour: hour, hourlyTemperature: hourlyTemperature, hourlyIcon: hourlyIcon)
                         self.hourlyWeatherData.append(hourlyWeather)
-                        print("Hour: \(hour), temperature: \(hourlyTemperature), icon: \(hourlyIcon)")
                     }
                 }
 

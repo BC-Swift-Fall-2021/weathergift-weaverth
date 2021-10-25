@@ -29,6 +29,11 @@ class LocationDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         clearUserInterface()
         updateUserInterface()
         
@@ -36,7 +41,6 @@ class LocationDetailViewController: UIViewController {
         tableView.dataSource = self
         collectionView.delegate = self
         collectionView.dataSource = self
-        
     }
     
     func clearUserInterface(){
